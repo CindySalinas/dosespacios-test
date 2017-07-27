@@ -71,13 +71,22 @@ header nav {
 }
 
 footer {
-  background-color: #4F4D53;
-  min-height: 320px;
-  color: #FFF;
+  width: 100%;
+}
+
+footer .footer-container {
   display: flex;
-  flex-flow: row nowrap;
-  padding-left: 20%;
-  text-align: left;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+.form-control input {
+  display: block;
+}
+
+.footer-container-list {
+  width: 25%;
 }
 
 .collection-banner-container {

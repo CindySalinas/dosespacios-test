@@ -1,3 +1,9 @@
 
 # bower
 components/
+
+# build
+build/
+
+# npm
+node_modules/
