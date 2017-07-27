@@ -75,6 +75,16 @@ gulp.task('watch', function() {
   return;
 });
 
+/* Upload to production */
+gulp.task('release', function(){
+  return gulp.src('build')
+    .pipe(subree({
+      remote: 'origin',
+      branch: 'gh-pages',
+      message: 'Uploading to production'
+    }));
+});
+
 /* Server init */
 gulp.task('browserSync', function(){
   browserSync({
