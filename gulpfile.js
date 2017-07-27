@@ -26,20 +26,22 @@ gulp.task('templates', function() {
 
 /* Minify css */
 gulp.task('css', function() {
-  return gulp.src('src/assets/css/*.css')
+  return gulp.src([
+      'components/font-awesome/css/font-awesome.css',
+      'src/assets/css/*.css'
+    ])
+    .pipe(concat('app.min.css'))
     .pipe(minify())
-    .pipe(rename({
-      extname: '.min.css'
-    }))
     .pipe(gulp.dest('build/assets/css'))
     .pipe(browserSync.reload({stream:true}));
 });
 
 /* Copy folders */
 gulp.task('copy', function() {
-  return gulp.src('src/assets/img/*')
-    .pipe(gulp.dest('build/assets/img'))
-    .pipe(browserSync.reload({stream:true}));
+  gulp.src('src/assets/img/*')
+    .pipe(gulp.dest('build/assets/img'));
+  return gulp.src('components/font-awesome/fonts/*')
+    .pipe(gulp.dest('build/assets/fonts'));
 });
 
 /* Concat JS*/
