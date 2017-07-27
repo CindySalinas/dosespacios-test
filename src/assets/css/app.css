@@ -72,11 +72,34 @@ header nav {
 
 footer {
   background-color: #4F4D53;
-  width: 100%;
   min-height: 320px;
   color: #FFF;
   display: flex;
   flex-flow: row nowrap;
   padding-left: 20%;
   text-align: left;
+}
+
+.collection-banner-container {
+
+}
+
+.collection-banner {
+  text-align: center;
+}
+
+.collection-banner img {
+  width: 250px;
+  height: 220px;
+  margin-right: 20px;
+}
+
+.collection-banner img:last-child {
+  margin-right: auto;
+}
+
+@media(max-width: 700px) {
+  .collection-banner-container {
+    flex-flow: column wrap;
+  }
 }
