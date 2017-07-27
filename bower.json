@@ -1,2 +1,20 @@
-# bower
-components/
+{
+  "name": "dosespacios-test",
+  "homepage": "https://github.com/CindySalinas/dosespacios-test",
+  "authors": [
+    "Cindy Salinas <cindysalinas15@gmail.com>"
+  ],
+  "description": "Test",
+  "main": "",
+  "keywords": [
+    "Landing",
+    "page",
+    "Javascript",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "3.2.1"
+  }
+}
