@@ -119,13 +119,8 @@ header .top-header{
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-}
-
-.hero h1 {
-  font-weight: 900;
-  font-size: 100px;
-  margin-right: auto;
-  margin-left: 20%;
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
 .flex-center {
@@ -138,6 +133,7 @@ header .top-header{
 .content {
   text-align: left;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .content h2 {
@@ -159,6 +155,34 @@ header .top-header{
 .divider {
   width: 100%;
   position: relative;
+}
+
+.title-divider {
+  font-weight: 600;
+  margin: 15px auto 15px auto;
+  text-align: center;
+  color: #969696;
+}
+
+.title-divider:after,
+.title-divider:before {
+  position: absolute;
+  width: 30%;
+  content: ' ';
+  background-color: #969696;
+  height: 2px;
+  top: 10px;
+  bottom: 0;
+}
+
+.title-divider:before {
+  left: 10px;
+  margin-right: 10px;
+}
+
+.title-divider:after {
+  right: 10px;
+  margin-left: 10px;
 }
 
 // Footer
@@ -258,38 +282,12 @@ footer .footer-container {
   color: #a1c8fc;
 }
 
-.title-divider {
-  font-weight: 600;
-  margin: 15px auto 15px auto;
-  text-align: center;
-  color: #969696;
-}
-
-.title-divider:after,
-.title-divider:before {
-  position: absolute;
-  width: 35%;
-  content: ' ';
-  background-color: #969696;
-  height: 2px;
-  top: 10px;
-  bottom: 0;
-}
-
-.title-divider:before {
-  left: 0;
-  margin-right: 10px;
-}
-
-.title-divider:after {
-  right: 0;
-  margin-left: 10px;
-}
-
 .collection-banner-container,
-.catalog-container {
+.catalog-container,
+.partners-container {
   display: flex;
   margin: 10px auto;
+  justify-content: space-around;
 }
 
 .collection-banner {
@@ -301,7 +299,7 @@ footer .footer-container {
 .collection-banner img {
   width: 260px;
   height: 200px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .collection-banner .collection-banner-title {
@@ -356,6 +354,16 @@ footer .footer-container {
   border-radius: 3px;
   padding: 10px 10px 5px 10px;
   font-size: 1.1em;
+}
+
+.partner {
+  margin-right: 20px;
+}
+
+.partner img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 700px) {
