@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Englebert');
 
 body,
 html {
@@ -117,7 +118,8 @@ footer .footer-container {
   margin-left: 10px;
 }
 
-.collection-banner-container {
+.collection-banner-container,
+.catalog-container {
   display: flex;
   margin: 10px auto;
 }
@@ -131,6 +133,7 @@ footer .footer-container {
 .collection-banner img {
   width: 260px;
   height: 200px;
+  object-fit: contain;
 }
 
 .collection-banner .collection-banner-title {
@@ -142,7 +145,49 @@ footer .footer-container {
 }
 
 .collection-banner:last-child {
+.catalog-product:last-child {
   margin-right: 0;
+}
+
+.catalog-product {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.catalog-product img {
+  width: 220px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.catalog-product .catalog-product-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #969696;
+}
+
+.catalog-product .catalog-product-buy-info {
+  padding: 0;
+  margin: 0;
+  text-align: center
+}
+
+.catalog-product-buy-info .catalog-product-price {
+  color: #F68F30;
+  margin: 0;
+}
+
+.catalog-product-buy-btn {
+  font-family: 'Englebert', sans-serif;
+  margin-top: 5px;
+  background-color: #FFF;
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 10px 10px 5px 10px;
+  font-size: 1.1em;
 }
 
 @media screen and (max-width: 700px) {
