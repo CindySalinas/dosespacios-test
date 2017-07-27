@@ -12,7 +12,106 @@ html {
 }
 
 header {
-  color: #000;
+  color: #4E4E4E;
+}
+header .login-section{
+  color: #888;
+  margin-top: 5px;
+  padding-right: 20%;
+  text-align: right;
+}
+header .login-section a:hover{
+  color: orange;
+  cursor: pointer;
+}
+header .header-container{
+  align-items: center;
+  display: fLex;
+  justify-content: space-between;
+  padding: 5px 20% 15px;
+}
+header .header-container .header-flex{
+  display: fLex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container .header-flex:first-child{
+  width: 65%;
+}
+header .header-container .header-flex:last-child{
+  width: 25%;
+}
+header .header-container .header-flex img{
+  width: 200px;
+}
+header .header-container .header-flex input{
+  border: 0px;
+  color: orange;
+  font-size: 0.9em;
+  text-align: right;
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: orange;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: orange;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: orange;
+}
+header .header-container .header-flex .header-items{
+  color: orange;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+header .header-container .header-flex .header-items:hover{
+  font-weight: bold;
+}
+
+header .top-header{
+  height:6px;
+  background-image: -webkit-linear-gradient(left,
+      #DEDEDE 20%,
+      #5cb85c 20%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
+      #6f5499 40%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 80%,
+      #DEDEDE 80%);
+  background-image: linear-gradient(left,
+      #5cb85c 20%,
+      #6f5499 20%,
+      #6f5499 40%,
+      #428bca 40%,
+      #428bca 60%,
+      #f0ad4e 60%,
+      #f0ad4e 80%,
+      #DEDEDE 80%);
+  background-size:100% 6px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -205,6 +304,7 @@ header nav {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 .navbar li {
   font-size: 1em;
@@ -217,7 +317,7 @@ header nav {
   cursor: pointer;
   color: #4E4E4E;
   display: block;
-  padding: 5px 10px;
+  padding: 10px 15px;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -228,6 +328,7 @@ header nav {
   display: none;
   margin: 0;
   left: -55%;
+  opacity: .9;
   padding: 0px;
   text-align: center;
   width: 150px;
