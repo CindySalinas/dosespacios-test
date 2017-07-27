@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Dos Espacios</title>
-  <link rel="stylesheet" href="./assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
 </head>
 
 <body>
@@ -56,15 +56,44 @@
     </div>
   </div>
   <footer>
-    <ul>
-      <li>Sobre Nosotros</li>
-      <li>Politicas</li>
-      <li>Newsletter</li>
-      <li>Contacto</li>
-    </ul>
+    <div class="footer-container">
+      <div class="footer-container-list">
+        <h6> Sobre Nosotros </h6>
+        <ul>
+          <li> Quienes somos </li>
+          <li> Tiendas </li>
+          <li> Noticias </li>
+          <li> Enlaces </li>
+          <li> Marcas </li>
+        </ul>
+      </div>
+      <div class="footer-container-list">
+        <h6> Políticas </h6>
+        <ul>
+          <li> Aviso legal </li>
+          <li> Condiciones de compra </li>
+          <li> Politica de cookies </li>
+        </ul>
+      </div>
+      <div class="footer-container-list">
+        <h6> Newsletter </h6>
+        <form class="form-control">
+          <input type="email" name="email">
+          <input type="checkbox" name="terms"> Acepto la politica de privacidad
+        </form>
+      </div>
+      <div class="footer-container-list">
+        <h6> Contacto </h6>
+        <ul>
+          <li> C/ Roberto Martin Holgado, 288223 - Pozuelo de Alarcon Madrid </li>
+          <li> (+34) 917990305 </li>
+          <li> info@kalzza.com </li>
+        </ul>
+      </div>
+    </div>
   </footer>
-  <script src="../components/jquery/dist/jquery.min.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="assets/js/libs.min.js"></script>
+  <script src="assets/js/app.min.js"></script>
 </body>
 
 </html>
