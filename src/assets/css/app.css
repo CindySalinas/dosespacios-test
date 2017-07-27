@@ -46,6 +46,7 @@ header nav {
 
 .content {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .content h2 {
@@ -65,9 +66,8 @@ header nav {
 }
 
 .divider {
-  background-color: #E8BE02;
   width: 100%;
-  height: 12px;
+  position: relative;
 }
 
 footer {
@@ -80,26 +80,68 @@ footer {
   text-align: left;
 }
 
-.collection-banner-container {
+.title-divider {
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: #969696;
+}
 
+.title-divider:after,
+.title-divider:before {
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  content: '\a0';
+  background-color: #969696;
+  top: 10px;
+  bottom: 0;
+}
+
+.title-divider:before {
+  margin-left: -26%;
+}
+
+.title-divider:after {
+  margin-left: 2%;
+}
+
+.collection-banner-container {
+  display: flex;
+  margin: 10px auto;
 }
 
 .collection-banner {
   text-align: center;
+  margin-right: 20px;
+  border-bottom: 1px solid #F68F30;
 }
 
 .collection-banner img {
-  width: 250px;
-  height: 220px;
-  margin-right: 20px;
+  width: 260px;
+  height: 200px;
 }
 
-.collection-banner img:last-child {
-  margin-right: auto;
+.collection-banner .collection-banner-title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #F68F30;
 }
 
-@media(max-width: 700px) {
+.collection-banner:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 700px) {
   .collection-banner-container {
     flex-flow: column wrap;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count:2;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
   }
 }
