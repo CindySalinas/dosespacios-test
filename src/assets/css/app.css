@@ -16,7 +16,7 @@ header {
 }
 header .login-section{
   color: #888;
-  margin-top: 5px;
+  margin-top: 10px;
   padding-right: 20%;
   text-align: right;
 }
@@ -67,6 +67,11 @@ header .header-container .header-flex .header-items{
   font-size: .9em;
 }
 
+header .header-container .header-flex .header-items i{
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
 header .header-container .header-flex .header-items:hover{
   font-weight: bold;
 }
@@ -101,13 +106,31 @@ header .top-header{
       #5cb85c 80%,
       #DEDEDE 80%);
   background-image: linear-gradient(left,
+      #DEDEDE 20%,
       #5cb85c 20%,
-      #6f5499 20%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
       #6f5499 40%,
-      #428bca 40%,
-      #428bca 60%,
-      #f0ad4e 60%,
-      #f0ad4e 80%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 80%,
       #DEDEDE 80%);
   background-size:100% 6px;
   background-position: 50% 100%;
@@ -380,22 +403,49 @@ footer .footer-container {
 
 // Navbar
 
-header nav {
+header .navbar {
   height: 100%;
 }
 
-.navbar ul {
-  padding: 0;
-  text-align: center;
+.nav-container{
   align-items: center;
   display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+  height: 45px;
+}
+
+.navbar{
+  width: 65%;
+}
+.social-networks{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 25%;
+}
+
+.social-networks a{
+  color: #4E4E4E;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.social-networks a:hover{
+  font-size: 1.5rem;
+}
+.navbar ul {
+  align-items: center;
+  display: flex;
+  font-family: Englebert,sans-serif;
   justify-content: center;
-  margin: 0;
+  margin: 5px 0 0;
+  padding: 0;
+  text-align: center;
 }
 .navbar li {
-  font-size: 1em;
+  font-size: .765em;
   list-style: none;
-  min-width: 80px;
   position: relative;
   text-transform: uppercase;
 }
@@ -413,15 +463,16 @@ header nav {
   position: absolute;
   display: none;
   margin: 0;
-  left: -55%;
+  left: -50%;
   opacity: .9;
   padding: 0px;
   text-align: center;
-  width: 150px;
+  width: 120px;
 }
 
 .navbar li:hover > a{
   color: orange;
+  font-size: 1rem;
 }
 .navbar li:hover .dropdown{
   display: block;
@@ -431,6 +482,7 @@ header nav {
 }
 .navbar li .dropdown li:hover a{
   color: white;
+  font-size: 0.8rem;
 }
 .navbar label {
   display: none;
