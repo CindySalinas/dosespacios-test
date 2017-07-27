@@ -12,15 +12,6 @@ html {
 
 header {
   color: #000;
-  height: 43px;
-}
-
-header nav {
-  margin-left: 20%;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  align-content: center;
 }
 
 .container {
@@ -110,5 +101,95 @@ footer .footer-container {
 @media(max-width: 700px) {
   .collection-banner-container {
     flex-flow: column wrap;
+  }
+}
+
+// Navbar
+
+header nav {
+  height: 100%;
+}
+
+.navbar ul {
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  font-size: 1em;
+  list-style: none;
+  min-width: 80px;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar li a {
+  cursor: pointer;
+  color: #4E4E4E;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar li .dropdown {
+  border-top: 3px solid orange;
+  background: #F5F5F5;
+  position: absolute;
+  display: none;
+  margin: 0;
+  left: -55%;
+  padding: 0px;
+  text-align: center;
+  width: 150px;
+}
+
+.navbar li:hover > a{
+  color: orange;
+}
+.navbar li:hover .dropdown{
+  display: block;
+}
+.navbar li .dropdown li:hover{
+  background: orange;
+}
+.navbar li .dropdown li:hover a{
+  color: white;
+}
+.navbar label {
+  display: none;
+}
+#menu-toggle {
+  display: none;
+}
+
+@media all and (max-width: 767px) {
+  .navbar label {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 auto;
+    text-align: center;
+    width: 50px;
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .navbar li:hover .dropdown{
+    display: block;
+    position: initial;
+    width: 100%;
+  }
+  #menu-toggle:checked + .nav {
+    display: block;
+  }
+  .navbar label:active .nav {
+    display: none;
   }
 }
