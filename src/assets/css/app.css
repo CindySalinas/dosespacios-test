@@ -91,7 +91,7 @@ footer .footer-container {
 
 .title-divider {
   font-weight: 600;
-  margin: 0;
+  margin: 15px auto 15px auto;
   text-align: center;
   color: #969696;
 }
@@ -99,20 +99,22 @@ footer .footer-container {
 .title-divider:after,
 .title-divider:before {
   position: absolute;
-  width: 300px;
-  height: 2px;
-  content: '\a0';
+  width: 35%;
+  content: ' ';
   background-color: #969696;
+  height: 2px;
   top: 10px;
   bottom: 0;
 }
 
 .title-divider:before {
-  margin-left: -26%;
+  left: 0;
+  margin-right: 10px;
 }
 
 .title-divider:after {
-  margin-left: 2%;
+  right: 0;
+  margin-left: 10px;
 }
 
 .collection-banner-container {
