@@ -167,7 +167,7 @@ header .top-header{
 .title-divider:after,
 .title-divider:before {
   position: absolute;
-  width: 30%;
+  width: 37%;
   content: ' ';
   background-color: #969696;
   height: 2px;
