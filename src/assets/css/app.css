@@ -124,7 +124,7 @@ footer .footer-container {
 .collection-banner img {
   width: 260px;
   height: 200px;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 .collection-banner .collection-banner-title {
