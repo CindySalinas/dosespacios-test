@@ -537,6 +537,16 @@ footer .footer-container {
   border: 2px dashed #FFF;
   border-radius: 5px;
   padding: 15px;
+  position: relative;
+}
+
+.banner .banner-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2.5em;
+  color: #FFF;
+  opacity: 0.6;
 }
 
 .banner-inner h4 {
