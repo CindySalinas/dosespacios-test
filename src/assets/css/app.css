@@ -379,8 +379,35 @@ footer .footer-container {
 .content-contact h6 {
   border-color: #a1c8fc;
 }
-.content-contact ul li:before {
+.content-contact ul li {
+  margin-bottom: 15px;
+}
+.content-contact ul li i {
   color: #a1c8fc;
+}
+.content-contact ul li i.fa-map-marker {
+  margin-right: 13px;
+}
+.content-contact ul li i.fa-phone {
+  margin-right: 10px;
+}
+.content-contact ul li i.fa-envelope {
+  margin-right: 8px;
+}
+
+.content-contact ul li:before{
+  content: '';
+}
+
+.form-icon {
+  position: relative;
+}
+
+.form-icon i {
+  color: #FF9800;
+  position: absolute;
+  right: 0;
+  top: 4px;
 }
 
 .collection-banner-container,
@@ -396,7 +423,6 @@ footer .footer-container {
   margin: 0 10px 20px;
   text-align: center;
 }
-
 .collection-banner img {
   width: 260px;
   height: 200px;
@@ -605,7 +631,7 @@ header .navbar {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10000;
   }
   .navbar label:active .nav {
     display: none;
