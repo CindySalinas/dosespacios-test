@@ -41,6 +41,8 @@ gulp.task('css', function() {
 gulp.task('copy', function() {
   gulp.src('src/assets/img/*')
     .pipe(gulp.dest('build/assets/img'));
+  gulp.src('components/bxslider-4/dist/images/*')
+    .pipe(gulp.dest('build/assets/css/images/'))
   return gulp.src('components/font-awesome/fonts/*')
     .pipe(gulp.dest('build/assets/fonts'));
 });
