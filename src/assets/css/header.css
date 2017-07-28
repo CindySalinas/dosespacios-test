@@ -1,0 +1,337 @@
+header {
+  color: #4E4E4E;
+}
+header .login-section{
+  color: #888;
+  margin: 10px auto 0;
+  max-width: 1080px;
+  text-align: right;
+}
+header .login-section a:hover{
+  color: orange;
+  cursor: pointer;
+}
+header .header-container{
+  align-items: center;
+  display: fLex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+header .header-container .header-flex{
+  display: fLex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-container .header-flex:first-child{
+  width: 65%;
+}
+header .header-container .header-flex:last-child{
+  width: 25%;
+}
+
+header .header-container .header-flex img{
+  width: 200px;
+}
+header .header-container .header-flex input{
+  border: 0px;
+  color: orange;
+  font-size: 0.9em;
+  text-align: right;
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: orange;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: orange;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: orange;
+}
+header .header-container .header-flex .header-items{
+  color: orange;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+header .header-container .header-flex .header-items i{
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+header .header-container .header-flex .header-items:hover{
+  font-weight: bold;
+}
+
+header .top-header{
+  height:6px;
+  background-image: -webkit-linear-gradient(left,
+      #DEDEDE 13%,
+      #5cb85c 13%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
+      #6f5499 40%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 89%,
+      #DEDEDE 89%);
+  background-image: -moz-linear-gradient(left,
+      #DEDEDE 13%,
+      #5cb85c 13%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
+      #6f5499 40%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 89%,
+      #DEDEDE 89%);
+  background-image: -ms-linear-gradient(left,
+      #DEDEDE 13%,
+      #5cb85c 13%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
+      #6f5499 40%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 89%,
+      #DEDEDE 89%);
+  background-image: linear-gradient(left,
+      #DEDEDE 13%,
+      #5cb85c 13%,
+      #5cb85c 25%,
+      #f0ad4e 25%,
+      #f0ad4e 30%,
+      #428bca 30%,
+      #428bca 35%,
+      #6f5499 35%,
+      #6f5499 40%,
+      #d9534f 40%,
+      #d9534f 45%,
+      #fd89ff 45%,
+      #fd89ff 50%,
+      #a00000 50%,
+      #a00000 55%,
+      #ff0000 55%,
+      #ff0000 60%,
+      #DEDEDE 60%,
+      #DEDEDE 65%,
+      #66009e 65%,
+      #66009e 70%,
+      #428bca 70%,
+      #428bca 75%,
+      #5cb85c 75%,
+      #5cb85c 89%,
+      #DEDEDE 89%);
+  background-size:100% 6px;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+header .navbar {
+  height: 100%;
+}
+
+.nav-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+  height: 45px;
+}
+
+.navbar{
+  width: 65%;
+}
+.social-networks{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+  width: 25%;
+}
+
+.social-networks a{
+  color: #4E4E4E;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all .2s linear;
+}
+.social-networks a:hover{
+  font-size: 2rem;
+}
+.navbar ul {
+  align-items: center;
+  display: flex;
+  font-family: Englebert,sans-serif;
+  justify-content: center;
+  margin: 5px 0 0;
+  padding: 0;
+  text-align: center;
+}
+.navbar li {
+  font-size: 18px;
+  list-style: none;
+  position: relative;
+  text-transform: uppercase;
+}
+.navbar li a {
+  cursor: pointer;
+  color: #4E4E4E;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar li .dropdown {
+  border-top: 3px solid orange;
+  background: #F5F5F5;
+  position: absolute;
+  display: none;
+  margin: 0;
+  left: -50%;
+  opacity: .9;
+  padding: 0px;
+  text-align: center;
+  width: 120px;
+  z-index: 300;
+}
+
+.navbar li:hover > a{
+  color: orange;
+  font-size: 1.4rem;
+}
+.navbar li:hover .dropdown{
+  display: block;
+}
+.navbar li .dropdown li:hover{
+  background: orange;
+}
+.navbar li .dropdown li:hover a{
+  color: white;
+  font-size: 1.2rem;
+}
+.navbar label {
+  display: none;
+}
+#menu-toggle {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  header .login-section{
+    padding: 0;
+    text-align: center;
+  }
+  header .header-container{
+    padding: 0 20px;
+  }
+  header .header-container .header-flex:first-child{
+    width: 100%;
+  }
+  header .header-container .header-flex input{
+    display: none;
+  }
+  header .header-container .header-flex:last-child{
+    display: none;
+  }
+  header .social-networks{
+    display: none;
+  }
+  .nav-container{
+    padding: 0;
+  }
+  .navbar{
+    position: absolute;
+    top: 45px;
+    width: 100%;
+  }
+  .navbar label {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 0 0 auto;
+    text-align: center;
+    width: 50px;
+
+  }
+  .navbar .nav {
+    display: none;
+  }
+  .navbar li {
+    width: 100%;
+  }
+  .navbar li:hover .dropdown{
+    display: block;
+    position: initial;
+    width: 100%;
+  }
+  #menu-toggle:checked + .nav {
+    display: block;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .navbar label:active .nav {
+    display: none;
+  }
+}
