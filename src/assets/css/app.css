@@ -333,6 +333,7 @@ footer .footer-container {
   border: 2px dashed #FFF;
   border-radius: 5px;
   padding: 15px;
+  padding-right: 50px;
   position: relative;
 }
 
