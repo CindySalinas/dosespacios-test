@@ -28,7 +28,8 @@ gulp.task('templates', function() {
 gulp.task('css', function() {
   return gulp.src([
       'components/font-awesome/css/font-awesome.css',
-      'src/assets/css/*.css'
+      'src/assets/css/*.css',
+      'components/bxslider-4/src/css/jquery.bxslider.css'
     ])
     .pipe(concat('app.min.css'))
     .pipe(minify())
@@ -59,7 +60,8 @@ gulp.task('appScripts', function() {
 
 gulp.task('libScripts', function() {
   return gulp.src([
-      'components/jquery/dist/jquery.js'
+      'components/jquery/dist/jquery.js',
+      'components/bxslider-4/src/js/jquery.bxslider.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify({
