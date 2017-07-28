@@ -198,6 +198,7 @@ header .top-header{
   align-content: center;
   margin: 0 auto;
   max-width: 1080px;
+  padding: 0 20px;
 }
 
 .flex-center {
@@ -235,10 +236,14 @@ header .top-header{
 }
 
 .title-divider {
+  color: #969696;
+  font-family: 'Englebert', sans-serif;
   font-weight: 600;
   margin: 30px auto 30px auto;
   text-align: center;
-  color: #969696;
+  font-size: 20px;
+  padding-top: 8px;
+  text-transform: uppercase;
 }
 
 .title-divider:after,
@@ -262,12 +267,9 @@ header .top-header{
   margin-left: 10px;
 }
 
-// Footer
-
 footer {
   margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 0 20px 15px;
 }
 
 footer h6 {
@@ -368,9 +370,9 @@ footer .footer-container {
 }
 
 .collection-banner {
+  border-bottom: 2px solid #F68F30;
+  margin: 0 10px 20px;
   text-align: center;
-  margin-right: 20px;
-  border-bottom: 1px solid #F68F30;
 }
 
 .collection-banner img {
@@ -380,11 +382,12 @@ footer .footer-container {
 }
 
 .collection-banner .collection-banner-title {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-weight: 400;
-  font-size: 16px;
   color: #F68F30;
+  font-family: 'Englebert', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+  text-transform: uppercase;
 }
 
 .collection-banner:last-child {
@@ -431,6 +434,12 @@ footer .footer-container {
   border-radius: 3px;
   padding: 10px 10px 5px 10px;
   font-size: 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.catalog-product-buy-btn:hover {
+  border-color: #f68f30;
+  color: #f68f30;
 }
 
 .partner {
