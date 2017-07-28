@@ -3,7 +3,6 @@ let gulp = require('gulp');
 let clean = require('gulp-clean');
 let minify = require('gulp-clean-css');
 let uglify = require('gulp-uglify');
-let flatten = require('gulp-flatten');
 let subree = require('gulp-subtree');
 let browserSync = require('browser-sync');
 let htmlmin = require('gulp-htmlmin');
