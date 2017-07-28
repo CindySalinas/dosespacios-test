@@ -543,6 +543,7 @@ header .navbar {
   padding: 0px;
   text-align: center;
   width: 120px;
+  z-index: 300;
 }
 
 .navbar li:hover > a{
